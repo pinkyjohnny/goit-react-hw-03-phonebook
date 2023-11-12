@@ -18,7 +18,6 @@ export class App extends React.Component {
 
   componentDidMount() {
     const contacts = JSON.parse(window.localStorage.getItem('contacts'));
-    console.log(contacts);
     if (contacts.length) {
       this.setState({ contacts });
     }
