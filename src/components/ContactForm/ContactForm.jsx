@@ -1,4 +1,6 @@
 import React from 'react';
+import { PropTypes } from 'prop-types';
+
 import {
   Button,
   Form,
@@ -63,3 +65,8 @@ export class ContactForm extends React.Component {
     );
   }
 }
+
+ContactForm.propTypes = {
+  name: PropTypes.string,
+  number: PropTypes.number,
+};
